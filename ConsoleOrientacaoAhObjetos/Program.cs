@@ -27,14 +27,14 @@ namespace ConsoleOrientacaoAhObjetos
             //contaCorrente.numero = 88102030;
 
             ContaCorrente contaCorrente = new ContaCorrente {
-                titular = cliente,
+                Titular = cliente,
                 agencia =  8888,
                 numero = 88102030
             };
              
             ContaCorrente outraContaCorrente = new ContaCorrente
             {
-                titular = new Cliente
+                Titular = new Cliente
                 {
                     nome = "Lopes Santos",
                     profissao = "Estudante",
@@ -44,12 +44,13 @@ namespace ConsoleOrientacaoAhObjetos
                 numero = 77102030
             };
 
+            outraContaCorrente.Saldo = 1;
             contaCorrente.Depositar(150);
             contaCorrente.Transferir(50, outraContaCorrente);
             contaCorrente.Sacar(200);
 
-            Console.WriteLine("Saldo de " + contaCorrente.titular.nome + " eh R$ " + contaCorrente.saldo);
-            Console.WriteLine("Saldo de " + outraContaCorrente.titular.nome + " eh R$ " + outraContaCorrente.saldo);
+            Console.WriteLine("Saldo de " + contaCorrente.Titular.nome + " eh R$ " + contaCorrente.Saldo);
+            Console.WriteLine("Saldo de " + outraContaCorrente.Titular.nome + " eh R$ " + outraContaCorrente.Saldo);
 
 
             Console.ReadLine();
