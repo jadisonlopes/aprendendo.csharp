@@ -8,11 +8,37 @@ namespace ConsoleOrientacaoAhObjetos
 {
     class ContaCorrente
     {
-        public Cliente Titular { get; set; }
-        public int agencia;
-        public int numero;
+        public static int TotalDeContasCriadas { get; private set; }
+        private int _agencia;
+        private int _numero;
         private double _saldo = 100;
-
+        public Cliente Titular { get; set; }
+        public int Agencia {
+            get
+            {
+                return this._agencia;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    this._agencia = value;
+                }
+            }
+        }
+        public int Numero {
+            get
+            {
+                return this._numero;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    this._numero = value;
+                }
+            }
+        }
         public double Saldo {
             get {
                 return this._saldo;
@@ -23,6 +49,13 @@ namespace ConsoleOrientacaoAhObjetos
                     this._saldo = value;
                 }
             }
+        }
+
+        public ContaCorrente(Cliente titular, int agencia, int numero) {
+            this.Titular = titular;
+            this._agencia = agencia;
+            this._numero = numero;
+            TotalDeContasCriadas++;
         }
 
         public bool Sacar(double valor) {
