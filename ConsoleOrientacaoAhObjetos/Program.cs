@@ -16,9 +16,9 @@ namespace ConsoleOrientacaoAhObjetos
             //cliente.cpf = "001.002.003.45";
 
             Cliente cliente = new Cliente {
-            nome = "Jadison Lopes",
-            profissao = "Analista Programador",
-            cpf = "001.002.003.45"
+            Nome = "Jadison Lopes",
+            Profissao = "Analista Programador",
+            Cpf = "001.002.003.45"
             };
 
             //ContaCorrente contaCorrente = new ContaCorrente();
@@ -36,9 +36,9 @@ namespace ConsoleOrientacaoAhObjetos
             {
                 Titular = new Cliente
                 {
-                    nome = "Lopes Santos",
-                    profissao = "Estudante",
-                    cpf = "001.002.003.45"
+                    Nome = "Lopes Santos",
+                    Profissao = "Estudante",
+                    Cpf = "001.002.003.45"
                 },
                 agencia = 7777,
                 numero = 77102030
@@ -49,8 +49,8 @@ namespace ConsoleOrientacaoAhObjetos
             contaCorrente.Transferir(50, outraContaCorrente);
             contaCorrente.Sacar(200);
 
-            Console.WriteLine("Saldo de " + contaCorrente.Titular.nome + " eh R$ " + contaCorrente.Saldo);
-            Console.WriteLine("Saldo de " + outraContaCorrente.Titular.nome + " eh R$ " + outraContaCorrente.Saldo);
+            Console.WriteLine("Saldo de " + contaCorrente.Titular.Nome + " eh R$ " + contaCorrente.Saldo);
+            Console.WriteLine("Saldo de " + outraContaCorrente.Titular.Nome + " eh R$ " + outraContaCorrente.Saldo);
 
 
             Console.ReadLine();
