@@ -11,7 +11,7 @@ namespace ConsoleBank.Funcionarios
     {
         public string Nome { get; set; }
         public string Cpf { get; set; }
-        public virtual double Salario { get; set; }
+        public virtual double Salario { get; protected set; }
 
         //Declarando construtor
         public Funcionario(string nome, double salario)

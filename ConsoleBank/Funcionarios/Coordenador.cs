@@ -12,6 +12,6 @@ namespace ConsoleBank.Funcionarios
         public Coordenador(string nome, double salario) : base(nome, salario) { }
 
         //Sobrescrevendo metodo setter da classe base - override
-        public override double Salario { set => base.Salario = value * 1.1; }
+        public override double Salario { protected set => base.Salario = value * 1.1; }
     }
 }
