@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleOrientacaoAhObjetos", "ConsoleOrientacaoAhObjetos\ConsoleOrientacaoAhObjetos.csproj", "{8DDE2F93-000A-431B-B964-06F139F085A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBank", "ConsoleBank\ConsoleBank.csproj", "{2A83F1CB-4D02-4712-8260-4082D3F58610}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8DDE2F93-000A-431B-B964-06F139F085A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DDE2F93-000A-431B-B964-06F139F085A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DDE2F93-000A-431B-B964-06F139F085A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A83F1CB-4D02-4712-8260-4082D3F58610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A83F1CB-4D02-4712-8260-4082D3F58610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A83F1CB-4D02-4712-8260-4082D3F58610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A83F1CB-4D02-4712-8260-4082D3F58610}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
