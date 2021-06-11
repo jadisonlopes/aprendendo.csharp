@@ -6,22 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleBank.Funcionarios
 {
-    class Diretor : Funcionario
+    class Desenvolvedor : Funcionario
     {
         //Passando parâmetros para o construtor base.
-        public Diretor(string nome) : base(nome, 5000.0) { }
-
-
-        //Sobrescrevendo o metodo da classe base - override.
-        public override double GetBonificacao()
-        {
-            return Salario * 1.0;
-        }
+        public Desenvolvedor(string nome) : base(nome, 2500.0) { }
 
         //Implementando metodo abstrato da classe base.
         public override void AumentarSalario()
         {
-            Salario *= 1.8;
+            Salario *= 1.6;
         }
     }
 }
