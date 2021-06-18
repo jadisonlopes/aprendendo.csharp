@@ -15,9 +15,10 @@ namespace ConsoleBank.Funcionarios
         public override double Salario { protected set => base.Salario = value * 1.1; }
 
         //Implementando metodo abstrato da classe base.
-        public override void AumentarSalario()
+        public override Funcionario AumentarSalario()
         {
             Salario *= 1.3;
+            return this;
         }
     }
 }

@@ -12,9 +12,10 @@ namespace ConsoleBank.Funcionarios
         public Desenvolvedor(string nome) : base(nome, 2500.0) { }
 
         //Implementando metodo abstrato da classe base.
-        public override void AumentarSalario()
+        public override Funcionario AumentarSalario()
         {
             Salario *= 1.6;
+            return this;
         }
     }
 }
