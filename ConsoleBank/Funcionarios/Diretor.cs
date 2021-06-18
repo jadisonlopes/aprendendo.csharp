@@ -24,5 +24,11 @@ namespace ConsoleBank.Funcionarios
             Salario *= 1.8;
             return this;
         }
+
+        public override Funcionario Info()
+        {
+            base.Info("Diretor");
+            return this;
+        }
     }
 }

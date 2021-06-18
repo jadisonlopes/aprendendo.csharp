@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConsoleBank.Funcionarios
 {
     //classe abstrata não podem ser instanciadas.
-    abstract class Funcionario
+    abstract class Funcionario : IFuncionario
     {
         public string Nome { get; protected set; }
         public string Cpf { get; protected set; }
@@ -27,8 +27,21 @@ namespace ConsoleBank.Funcionarios
 
         }
 
-        //Metodos abstratos não podem ser implementados e só podem existir em classes abstratas.
-        public abstract void AumentarSalario();
+        public abstract Funcionario Info();
 
+        //Metodo será chamado na implementação do metodo Info();
+        protected void Info(string cargo)
+        {
+            Console.WriteLine(cargo + " " + this.Nome + " tem salário de R$" + this.Salario + " e sua bonificação eh " + this.GetBonificacao());
+        }
+
+        //Metodos abstratos não podem ser implementados e só podem existir em classes abstratas.
+        public abstract Funcionario AumentarSalario();
+
+        public Funcionario MostreOhAumentoDeSalario()
+        {
+            Console.WriteLine("Seu novo salário eh R$" + this.Salario);
+            return this;
+        }
     }
 }

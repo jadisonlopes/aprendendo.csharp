@@ -11,29 +11,21 @@ namespace ConsoleBank
     {
         static void Main(string[] args)
         {
-
             Funcionario jadison;
 
             jadison = new Desenvolvedor("Jadison");
-            Console.WriteLine("Funcionário " + jadison.Nome + " tem salário de R$" + jadison.Salario + " e sua bonificação eh " + jadison.GetBonificacao());
-            jadison.AumentarSalario();
-            MostreOhAumentoDeSalario(jadison.Salario);
+            jadison.Info();
+
+            Salario salario = new Salario(jadison);
+            salario.GerenciarAumento();
 
             jadison = new Coordenador("Jadison");
-            Console.WriteLine("Coordenador " + jadison.Nome + " tem salário de R$" + jadison.Salario + " e sua bonificação eh " + jadison.GetBonificacao());
-            jadison.AumentarSalario();
-            MostreOhAumentoDeSalario(jadison.Salario);
+            jadison.Info().AumentarSalario().MostreOhAumentoDeSalario();
 
             jadison = new Diretor("Jadison");
-            Console.WriteLine("Diretor.... " + jadison.Nome + " tem salário de R$" + jadison.Salario + " e sua bonificação eh " + jadison.GetBonificacao());
-            jadison.AumentarSalario();
-            MostreOhAumentoDeSalario(jadison.Salario);
+            jadison.Info().AumentarSalario().MostreOhAumentoDeSalario();
 
             Console.ReadLine();
-        }
-
-        public static void MostreOhAumentoDeSalario(double salario) {
-            Console.WriteLine("Seu novo salário eh R$" + salario);
         }
     }
 }

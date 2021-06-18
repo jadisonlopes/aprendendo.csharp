@@ -47,6 +47,8 @@
     <Compile Include="Funcionarios\Coordenador.cs" />
     <Compile Include="Funcionarios\Diretor.cs" />
     <Compile Include="Funcionarios\Funcionario.cs" />
+    <Compile Include="Funcionarios\IFuncionario.cs" />
+    <Compile Include="Funcionarios\Salario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

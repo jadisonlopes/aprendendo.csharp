@@ -20,5 +20,11 @@ namespace ConsoleBank.Funcionarios
             Salario *= 1.3;
             return this;
         }
+
+        public override Funcionario Info()
+        {
+            base.Info("Coordenador");
+            return this;
+        }
     }
 }
